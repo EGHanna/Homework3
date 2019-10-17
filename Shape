@@ -1,0 +1,51 @@
+public class Shape {
+
+	public String draw() {
+		return ("Drawing shape");
+	}
+	
+	public String erase() {
+		return ("Erasing shape");
+	}
+	}
+ class Circle extends Shape {
+	 
+	 public String draw() {
+		return ("Drawing Circle");
+		 
+	 }
+	  
+	 public String erase () {
+		 return ("Erasing Circle");
+	 }
+	 
+}
+
+ class Square extends Shape {
+	 
+	 public String draw() {
+		 return ("Drawing Square");
+	 }
+	 
+	 public String erase() {
+		 return ("Drawing Square");
+	 }
+ }
+ 
+ class Triangle extends Shape {
+	 
+	 public String draw() {
+		 return ("Drawing triangle");
+	 }
+	 
+	 public String erase() {
+		 return ("Erasing Triangle");
+	 }
+ }
+ 
+ class shapeDemo {
+	 
+	 Shape s = new Square();
+	 Shape c = new Circle();
+	 Shape t = new Triangle();
+ }
