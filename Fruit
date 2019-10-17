@@ -1,0 +1,84 @@
+//Erick Hanna
+//
+public  class Fruit{
+			String taste;
+			String name;
+			double size;
+			
+		
+		public Fruit (double size, String name, String taste) {
+			
+			this.size =size;
+			this.name = name;
+			this.taste = taste;	
+		
+		}
+		
+	String getName() {
+		return name;
+	}
+	
+	String getTaste() {
+		return taste;
+	}
+	
+	double getSize() {
+		return size;
+	}
+		
+	public String eat() {	
+			
+		return ("The fruit tastes like" + this.getTaste() + "\t It's" + this.getSize() +"\t in size."+
+                 "\t The fruit's name is"+ this.getName() + "." );
+		}
+class Orange extends Fruit {
+
+	public Orange(double size, String name, String taste) {
+		super(size, name, taste);
+	}
+	public String eat() { 
+		
+	return ( "This fruit's name is" + this.getName() + "\n It is" + this.getSize() + "cm long." + "\n It tastes" +
+		this.getTaste() );
+	}	
+	}	
+class Apple extends Fruit {
+
+	public Apple(double size, String name, String taste) {
+		super(size, name, taste);
+		
+	}
+public String eat() { 
+	
+	 return "This fruit's name is" + this.getName() + "\n It is" + this.getSize() + "cm long." + "\n It tastes" +
+	this.getTaste();
+	
+
+	}	
+
+
+
+	}
+	
+	public static void main(String[] args) {
+		
+		Fruit java = new Apple (34.5, Apple, Crunchy );
+		System.out.println (java.eat());
+		
+		Fruit citrus = new Orange (12.3, Orange, Sour);
+		System.out.println (java.eat());
+		
+	
+}
+}
+
+
+
+		
+
+
+
+		
+	
+
+
